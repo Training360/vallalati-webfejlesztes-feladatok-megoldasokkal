@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Elérhetőség</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+            integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+        <link rel="stylesheet" href="./css/hamburger.css">
+        <link rel="stylesheet" href="./css/weather.css">
+    </head>
+
+    <body onload="weatherWidget()">
+        <div class="page">
+            <div class="container widget">
+                <div class="row">
+                    <div class="col-9">
+                        <div class="row">
+                            <div class="col-12">
+                                <span>Időjárás</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <form class="form-inline col-12">
+                                <div class="form-group">
+                                    <label for="day" class="sr-only">Nap</label>
+                                    <select id="day" class="form-control form-control mb-2 mr-sm-2">
+                                        <option value="0" selected>Hétfő</option>
+                                        <option value="1">Kedd</option>
+                                        <option value="2">Szerda</option>
+                                        <option value="3">Csütörtök</option>
+                                        <option value="4">Péntek</option>
+                                        <option value="5">Szombat</option>
+                                        <option value="6">Vasárnap</option>
+                                    </select>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input type="radio" id="unitCelsius" class="form-check-input mr-sm-2" name="unit"
+                                        value="celsius" checked>
+                                    <label for="unitCelsius"
+                                        class="form-check-label small font-weight-bold mr-sm-2">Celsius</label>
+                                </div>
+                                <div class="form-check mb-2">
+                                    <input type="radio" id="unitFahrenheit" class="form-check-input mb-1 mr-sm-2"
+                                        name="unit" value="fahrenheit">
+                                    <label for="unitFahrenheit"
+                                        class="form-check-label small font-weight-bold mr-sm-2">Fahrenheit</label>
+                                </div>
+                                <input type="button" class="btn btn-success mr-sm-2 weather" value="Mutasd!"
+                                    onclick="weatherWidget()">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="row">
+                            <div id="temperature" class="col-12"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <p class="left">Minimum: <span id="minTemperature"></span></p>
+                    </div>
+                    <div class="col">
+                        <p class="center">Maximum: <span id="maxTemperature"></span></p>
+                    </div>
+                    <div class="col">
+                        <p class="right">Átlag: <span id="avgTemperature"></span></p>
+                    </div>
+                </div>
+            </div>
+
+            <nav>
+                <a href="contact.html">Elérhetőség</a>
+                <a href="menu.html">Étlap</a>
+                <a href="order-form.html">Rendelés</a>
+                <a href="sale.html">Akciók</a>
+            </nav>
+            <div class="content">
+                <h1>Elérhetőségünk</h1>
+                <h2>Címünk</h2>
+                <p>1117 Budapest, Budafoki út 56.</p>
+                <h2>Telefonszámunk</h2>
+                <p>(1) 880-0048</p>
+                <h2>Nyitvatartás</h2>
+                <ul>
+                    <li>Hétfő 10:00-20:00</li>
+                    <li>Kedd 10:00-20:00</li>
+                    <li>Szerda 10:00-20:00</li>
+                    <li>Csütörtök 10:00-20:00</li>
+                    <li>Péntek 10:00-22:00</li>
+                    <li>Szombat 10:00-22:00</li>
+                    <li>Vasárnap 10:00-22:00</li>
+                </ul>
+                <h2>Megközelítés</h2>
+                <p>Autóval a Hengermalom utcában lehet parkolni.</p>
+                <p>Tömegközlekedéssel a 103 busz Hengermalom úti végállomásánál, illetve a 33, 133E buszokkal a
+                    Hengermalom
+                    út
+                    megállónál kell leszállni.</p>
+                <img src="./images/map.png" alt="Budafoki út 56. térképen" class="map">
+            </div>
+        </div>
+
+        <script src="./js/data.js"></script>
+        <script src="./js/weather.js"></script>
+    </body>
+
+</html>

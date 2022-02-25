@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto:300');
+
+body {
+  background-color: #ffd000;
+  color: #000;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  margin: 0;
+}
+
+th,
+.header-row {
+  background-image: url('/images/hamburger-graphics-small.jpg');
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+th {
+  background-color: white;
+  color: #28a745;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  padding: 0;
+  text-align: center;
+}
+
+.header-row {
+  background-position: right;
+}
+
+td {
+  font-size: 20px;
+  line-height: 1.5em;
+}
+
+tr {
+  border-bottom: solid 1px white;
+}
+
+tr:nth-child(even) {
+  background-color: #f1e2b0;
+}
+
+tr:nth-child(odd) {
+  background-color: #faeec8;
+}
+
+h1,
+h2 {
+  color: maroon;
+  font-family: 'Open Sans', sans-serif;
+  font-variant: small-caps;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+.page {
+  background-color: white;
+  margin: 0 auto;
+  min-width: 150px;
+  padding: 20px;
+  width: 80%;
+}
+
+img {
+  width: 100%;
+}
+
+.map {
+  max-width: 600px;
+}
+
+.card {
+  background-color: #f1e2b0;
+  border-radius: 10px;
+  box-shadow: 3px 3px 6px #aaa;
+  box-sizing: border-box;
+  margin: 20px 0;
+  overflow: auto;
+  padding: 20px;
+  width: 100%;
+}
+
+.card-text {
+  float: left;
+  width: 80%;
+}
+
+.card-image {
+  float: left;
+  width: 20%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+a {
+  background-color: maroon;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  color: #ffd000;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1;
+  min-width: 200px;
+  padding: 10px;
+  text-align: center;
+  text-decoration: none;
+  width: 24.7%;
+}
+
+a:hover {
+  background-color: #ffd000;
+  color: maroon;
+  text-decoration: none;
+}
+
+fieldset {
+  border: 1px solid #28a745;
+  padding: 0.5rem 1.5rem;
+}
+
+legend {
+  color: #28a745;
+  font-size: 1rem;
+  font-style: italic;
+  width: auto;
+}
+
+form {
+  margin: 0 auto;
+  max-width: 400px;
+  width: 400px;
+}
+
+.label-block {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+.form-check-label:hover,
+.btn:hover {
+  cursor: pointer;
+}
+
+.message {
+  color: #28a745;
+  font-weight: bold;
+}

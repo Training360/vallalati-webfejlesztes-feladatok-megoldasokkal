@@ -1,0 +1,9 @@
+section,
+header {
+    padding: 2rem 0;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}

@@ -1,0 +1,19 @@
+.container.widget {
+  max-width: 100%;
+  background-color: maroon;
+  border-radius: 10px;
+  color: #ffd000;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.btn.btn-success.weather {
+  background-color: #ffd000;
+  color: maroon;
+  border-color: #ffd000;
+}
+
+#temperature {
+  text-align: right;
+}

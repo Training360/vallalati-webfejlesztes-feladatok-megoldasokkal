@@ -1,0 +1,14 @@
+section,
+header {
+    padding: 2rem 0;
+}
+
+.form-control:disabled {
+    background: transparent;
+    border: 1px solid transparent;
+}
+
+.table td,
+.table th {
+    vertical-align: middle;
+}
